@@ -1,0 +1,314 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+header {
+  background: #333F4F;
+}
+header .container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 40px 0 40px;
+  *zoom: 1;
+}
+header .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header .container .logo {
+  float: left;
+  margin-right: 60px;
+}
+header .container .search {
+  float: left;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+header .container .search input {
+  float: left;
+  width: 240px;
+  height: 33px;
+  padding: 0 5px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #22A0D8;
+  border-right: none;
+  outline: none;
+}
+header .container .search button {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #22A0D8;
+  border-left: none;
+  outline: none;
+  background: #fff url("../images/bg_serch.png") no-repeat center;
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+header ul {
+  float: right;
+  padding-top: 10px;
+  text-align: right;
+}
+header ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+header ul li + li {
+  border-left: 1px solid #ACC7FD;
+}
+header ul li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #ACC7FD;
+}
+header ul li a:hover {
+  color: #fff;
+}
+header ul p {
+  text-align: left;
+  padding: 0 10px;
+}
+header ul p a {
+  font-size: 10px;
+  color: #ccc;
+}
+
+nav {
+  background: #AFCAFD;
+}
+nav a {
+  text-decoration: none;
+}
+nav .nav_lv0 {
+  width: 1100px;
+  margin: 0 auto;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+nav .nav_lv0 > li {
+  position: relative;
+  display: inline-block;
+}
+nav .nav_lv0 > li > a {
+  display: block;
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  color: #333F50;
+}
+nav .nav_lv0 > li:hover .nav_lv1 {
+  display: block;
+}
+nav .nav_lv0 > li:hover > a {
+  color: #fff;
+}
+nav .nav_lv1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border: 1px solid #AFCAFD;
+  border-top: none;
+  background: #fff;
+}
+nav .nav_lv1 li {
+  position: relative;
+  height: 30px;
+}
+nav .nav_lv1 li a {
+  display: block;
+  height: 100%;
+  padding: 10px 0 10px 5px;
+  font-size: 12px;
+  color: #666;
+}
+nav .nav_lv1 li:hover .nav_lv2 {
+  display: block;
+}
+nav .nav_lv1 li:hover > a {
+  color: #AFCAFD;
+}
+nav .nav_lv2 {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  margin-top: -1px;
+  border: 1px solid #AFCAFD;
+  background: #fff;
+}
+
+section {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #333F4F;
+}
+footer .store {
+  float: right;
+  margin-right: -30px;
+}
+footer .store a {
+  display: block;
+  width: 160px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+footer .store a.store_link1 {
+  background-image: url(../images/u1258.png);
+}
+footer .store a.store_link2 {
+  background-image: url(../images/u1260.png);
+}
+footer .container {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 30px 0;
+  *zoom: 1;
+}
+footer .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer dl {
+  float: left;
+  width: 120px;
+  margin-right: 120px;
+}
+footer dl dt {
+  margin-bottom: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #fff;
+}
+footer dl dt:hover {
+  font-weight: normal;
+}
+footer dl dd {
+  line-height: 1.1em;
+}
+footer dl dd a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #A7C2F6;
+}
+footer .hot_link {
+  margin-top: 10px;
+}
+footer .hot_link a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+footer .hot_link .link1 {
+  background-image: url("../images/link1.png");
+}
+footer .hot_link .link2 {
+  background-image: url("../images/link2.png");
+}
+footer .hot_link .link3 {
+  background-image: url("../images/link3.png");
+}
+footer .foot_right {
+  position: relative;
+  padding-top: 15px;
+  font-size: 10px;
+  color: #A7C2F6;
+  clear: both;
+}
+footer .foot_right div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+footer .foot_right div img {
+  position: absolute;
+  left: 0;
+  top: -45px;
+}
+footer .foot_right p {
+  text-align: center;
+}
+footer .foot_right p a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: inherit;
+}
+footer .foot_right p a:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=home.css.map */

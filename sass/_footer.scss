@@ -1,0 +1,99 @@
+footer{
+	background: $blue;
+	.store{
+		float: right;
+		margin-right: -30px;
+		a{
+			display: block;
+			width: 160px;
+			height: 50px;
+			margin-bottom: 10px;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			&.store_link1{
+				background-image: url(../images/u1258.png);
+			}		
+			&.store_link2{
+				background-image: url(../images/u1260.png);
+			}
+		}
+	}
+	.container{
+		position: relative;
+		width: $boxwd;
+		margin: 0 auto;
+		padding: 30px 0;
+		@include pie-clearfix;
+	}
+	dl{
+		float: left;
+		width: 120px;
+		margin-right: 120px;
+		dt{
+			margin-bottom: 15px;
+			font-weight: bold;
+			line-height: 20px;
+			color: #fff;
+			&:hover{
+				font-weight: normal;
+				// font-size: 12px;
+			}
+		}
+		dd{
+			line-height: 1.1em;
+			a{
+				font-size: 10px;
+				text-decoration: none;
+				color: #A7C2F6;
+			}
+		}
+	}
+	.hot_link{
+		margin-top: 10px;
+		a{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+		.link1{
+			background-image: url("../images/link1.png");
+		}
+		.link2{
+			background-image: url("../images/link2.png");
+		}
+		.link3{
+			background-image: url("../images/link3.png");
+		}
+	}
+	.foot_right{
+		position: relative;
+		padding-top: 15px;
+		font-size: 10px;
+		color: #A7C2F6;
+		clear: both;
+		div{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			img{
+				position: absolute;
+				left: 0;
+				top: -45px;
+			}
+		}
+		p{
+			text-align: center;
+			a{
+				margin: 0 20px;
+				text-decoration: none;
+				color: inherit;
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+	}
+}
