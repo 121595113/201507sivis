@@ -28,6 +28,14 @@ nav{
 				}
 			}
 		}
+		div{
+			float: right;
+			a{
+				display: block;
+				line-height: 50px;
+				color: #fff;
+			}
+		}
 	}
 	.nav_lv1{
 		display: none;

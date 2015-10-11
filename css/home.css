@@ -163,6 +163,14 @@ nav .nav_lv0 > li:hover .nav_lv1 {
 nav .nav_lv0 > li:hover > a {
   color: #fff;
 }
+nav .nav_lv0 div {
+  float: right;
+}
+nav .nav_lv0 div a {
+  display: block;
+  line-height: 50px;
+  color: #fff;
+}
 nav .nav_lv1 {
   display: none;
   position: absolute;
