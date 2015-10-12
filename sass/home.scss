@@ -11,6 +11,11 @@
 @import "header";
 // 导航
 @import "nav";
+// 侧边导航
+@import "sidebar";
+// 列表
+@import "content_list";
+@import "ditu";
 section{
 	width: $boxwd;
 	margin: 0 auto;
