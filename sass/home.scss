@@ -14,12 +14,8 @@
 // 侧边导航
 @import "sidebar";
 // 列表
-@import "content_list";
 @import "ditu";
-section{
-	width: $boxwd;
-	margin: 0 auto;
-}
+@import "content_list";
 // 页脚
 @import "footer";
 
