@@ -1,75 +1,38 @@
-ï»¿@echo off
+@echo off
 
-
-
-rem è®¾ç½®å˜é‡
-
+rem ÉèÖÃ±äÁ¿
 set batDirDrive=%~dp0
-
 set batDirPath=%~p0
-
 set batName=%~n0
-
 set configDir=..\_config
-
 set configName=%batName%.rb
-
 set configRb=%batDirDrive%%configDir%\%configName%
 
-
-
-rem è¿›å…¥.configçˆ¶çº§ç›®å½•
-
+rem ½øÈë.config¸¸¼¶Ä¿Â¼
 cd %batDirPath%
-
 cd ..\..\
 
-
-
-rem é€‰æ‹©å“ªç§ç¯å¢ƒ
-
-echo å¼€å‘æ¨¡å¼è¾“å…¥d,ç”Ÿäº§æ¨¡å¼è¾“å…¥p,å–æ¶ˆè¾“å…¥n
-
+rem Ñ¡ÔñÄÄÖÖ»·¾³
+echo ¿ª·¢Ä£Ê½ÊäÈëd,Éú²úÄ£Ê½ÊäÈëp,È¡ÏûÊäÈën
 choice /c dpn /M "development,production,end"
-
 if errorlevel 3 goto end
-
 if errorlevel 2 goto production
-
 if errorlevel 1 goto development
 
-
-
-rem å¼€å‘æ¨¡å¼
-
+rem ¿ª·¢Ä£Ê½
 :development
-
-echo å¼€å‘æ¨¡å¼ï¼Œå¸¦æœ‰sourcemap
-
+echo ¿ª·¢Ä£Ê½£¬´øÓĞsourcemap
 call compass watch -c %configRb%
-
 goto end
 
-
-
-rem ç”Ÿäº§æ¨¡å¼
-
+rem Éú²úÄ£Ê½
 :production
-
-echo ç”Ÿäº§æ¨¡å¼ï¼Œå…¨å‹ç¼©
-
+echo Éú²úÄ£Ê½£¬È«Ñ¹Ëõ
 call compass compile -c %configRb% -e development --force
-
 call compass compile -c %configRb% -e production --force
-
 goto end
 
-
-
-rem ç»“æŸé€€å‡º
-
+rem ½áÊøÍË³ö
 :end
-
 rem pause
-
 cmd /k

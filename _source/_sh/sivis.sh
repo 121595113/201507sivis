@@ -1,6 +1,7 @@
 #! /bin/bash  
 shName=`basename $0 .sh`
-configDir=../_config
+cd ../../
+configDir=_source/_config
 configName="${shName}.rb"
 
 if [ x$1 != x ] && [ $1 == '-p' ]

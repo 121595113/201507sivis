@@ -1,0 +1,74 @@
+@import "compass/utilities";
+@import "compass/reset";
+@import "argument";
+// 页头
+@import "header";
+// 导航
+@import "nav";
+// 页脚
+@import "footer";
+// 星星样式
+.star {
+    display: inline-block;
+    width: 79px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    background: url(../images/star01.png) no-repeat;
+    b {
+        float: left;
+        display: block;
+        height: 14px;
+        background: url(../images/star02.png) no-repeat;
+    }
+}
+
+@for $i from 1 through 5 {
+    .star#{$i} {
+        b {
+            width: 16px*$i;
+        }
+    }
+}
+
+// 按钮
+.link_button {
+    display: block;
+    width: 285px;
+    height: 30px;
+    border: 1px solid #999;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+// 页码
+.pagenumber {
+    float: right;
+    margin: 40px 0;
+    @include pie-clearfix;
+    li {
+        display: inline-block;
+        margin-left: 8px;
+        a{
+            display: block;
+            text-align: center;
+            line-height: 25px;
+            padding: 0 10px;
+            font-size: 12px;
+            border: 1px solid #999;
+            text-decoration: none;
+            color: #666;
+            &.active,&:hover{
+                background: $navcolor;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

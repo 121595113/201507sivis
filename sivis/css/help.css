@@ -1,0 +1,32 @@
+.help h1, .faq h1 {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.help, .faq {
+  width: 640px;
+  margin: 0 auto;
+}
+.help dl, .faq dl {
+  margin-bottom: 150px;
+}
+.help dl dt, .faq dl dt {
+  margin-top: 20px;
+  line-height: 2em;
+  font-size: 16px;
+  color: #666;
+}
+.help dl dd, .faq dl dd {
+  font-size: 10px;
+  color: #AFCAFD;
+}
+.help dl dd a, .faq dl dd a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.help dl {
+  background: url(../images/u62.png) no-repeat bottom right;
+}
+
+/*# sourceMappingURL=help.css.map */

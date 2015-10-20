@@ -1,0 +1,29 @@
+@import "argument";
+.help,.faq {
+    width: 640px;
+    margin: 0 auto;
+    @extend %h1;
+    dl {
+    	margin-bottom: 150px;
+    	
+        dt {
+        	margin-top: 20px;
+        	line-height: 2em;
+            font-size: 16px;
+            color: #666;
+        }
+        dd {
+            font-size: 10px;
+            color: $navcolor;
+            a{
+            	text-decoration: none;
+            	color: inherit;
+            }
+        }
+    }
+}
+.help{
+	dl{
+		background: url(../images/u62.png) no-repeat bottom right;
+	}
+}

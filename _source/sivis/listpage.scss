@@ -1,0 +1,48 @@
+@import "compass/utilities";
+@import "argument";
+@import "ditu";
+.vertical_list {
+    width: $boxwd;
+    margin: 0 auto;
+    .list_container {
+        >li {
+            position: relative;
+            height: 120px;
+            padding: 30px 0 30px 320px;
+            border-top: 1px solid #999;
+            img {
+                position: absolute;
+                left: 0;
+            }
+        }
+        h2 {
+            font-size: 14px;
+        }
+        ul {
+        	width: 600px;
+        	line-height: 30px;
+            @include pie-clearfix;
+            border-bottom: 1px dotted #999;
+            font-size: 12px;
+            li {
+                float: left;
+                margin-right: 20px;
+            }
+            label{
+            	color: $navcolor;
+            }
+            .star{
+            	margin-left: 10px;
+            	vertical-align: middle;
+            }
+        }
+        dl{
+        	margin-top: 5px;
+        	line-height: 1.2em;
+        	font-size: 12px;
+        	label{
+        		color: $navcolor;
+        	}
+        }
+    }
+}

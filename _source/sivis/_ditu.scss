@@ -1,15 +1,16 @@
 .ditu{
 	width: $boxwd;
 	margin: 0 auto;
+	@include pie-clearfix;
 }
 .ditu_container{
-	// overflow: hidden;
 	.ditu_list{
 		padding-top: 10px;
 		line-height: 30px;
 		font-size: 12px;
 		dt{
 			float: left;
+			width: 80px;
 			margin-right: 40px;
 			color: #999;
 		}
@@ -31,9 +32,9 @@
 		}
 	}
 	.ditu_show{
-		overflow: hidden;
+		position: relative;	
 		border: 1px solid #cdcdcd;
-		position: relative;
+		overflow: hidden;
 		a{
 			position: absolute;
 			right: 20px;
@@ -42,12 +43,9 @@
 		p{
 			position: relative;
 			float: right;
-			margin-right: 130px;
-			margin-top: 20px;
 			padding-left: 5px;
 			text-align: left;
 			line-height: 1.2em;
-			font-size: 12px;
 			span{
 				position: absolute;
 				right: 100%;
@@ -73,7 +71,104 @@
 		}
 	}
 	.ditu_box{
-		height: 400px;
 		background: #ccc;
 	}
 }
+// 主要样式
+.home{
+	.ditu_show{
+		margin-top: 30px;
+		p{
+			margin-right: 130px;
+			margin-top: 20px;
+			font-size: 12px;
+		}
+	}
+	.ditu_box{
+		height: 400px;
+	}
+}
+// 列表页样式
+.listpage{
+	margin-bottom: 20px;
+	.ditu_list{
+		padding-bottom: 10px;
+		overflow: hidden;
+		border-bottom: 1px dashed #999;
+		&:last-of-type{
+			border: none;
+			a{
+				margin:0 5px;
+				padding: 5px 10px;
+				min-width: 40px;
+				border: 1px solid $navcolor;
+				text-align: center;
+				line-height: 1;
+			}
+		}
+		dt{
+			margin-right: 20px;
+		}
+	}
+	// 小地图
+	.ditu_show{
+		float: right;
+		margin-top: 10px;
+		margin-left: 10px;
+		width: 408px;
+		height: 277px;
+		p{
+			margin-top: 10px;
+			margin-right: 65px;
+			font-size: 10px;
+		}
+		h2{
+			height: 30px;
+			padding: 10px 0 0 10px;
+			font-size: 14px;
+		}
+		a{
+			width: 44px;
+			img{
+				width: 100%;
+			}
+		}
+		.ditu_box{
+			height: 227px
+		}
+	}
+	// 二级页面面包屑导航
+	.subnav{
+		overflow: hidden;
+		padding: 15px 0;
+		border-bottom: 1px solid #999;
+		li{
+			display: inline-block;
+			line-height: 24px;
+			border: 1px solid $navcolor;
+			&.active{
+				span{
+					float: right;
+					height: 24px;
+					width: 20px;
+					border-left: 1px solid $navcolor;
+					text-align: center;
+					background: #fff;
+					color: $navcolor;
+					cursor: pointer;
+				}
+			}
+		}
+		a{
+			display: inline-block;
+			padding: 0 10px;			
+			vertical-align: top;
+			text-decoration: none;
+			font-size: 14px;
+			color: #333;
+		}
+	}
+}
+
+
+
