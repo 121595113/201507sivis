@@ -168,6 +168,31 @@
   color: #333;
 }
 
+.good-sprite, .good-u1, .good-u2, .good-u3, .good-u4, .good-u5 {
+  background-image: url('../images/good-s091a56d4ee.png');
+  background-repeat: no-repeat;
+}
+
+.good-u1 {
+  background-position: 0 0;
+}
+
+.good-u2 {
+  background-position: 0 -16px;
+}
+
+.good-u3 {
+  background-position: 0 -32px;
+}
+
+.good-u4 {
+  background-position: 0 -48px;
+}
+
+.good-u5 {
+  background-position: 0 -64px;
+}
+
 .vertical_list {
   width: 1100px;
   margin: 0 auto;
@@ -215,6 +240,152 @@
 }
 .vertical_list .list_container dl label {
   color: #AFCAFD;
+}
+
+.msg_list {
+  position: relative;
+  width: 680px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 35px;
+}
+.msg_list h1 {
+  padding: 20px 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.msg_list h2 {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.msg_list .other {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 120px;
+}
+.msg_list .other button {
+  position: relative;
+  width: 100%;
+  border: 1px solid #eee;
+  text-align: left;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.msg_list .other button:hover ul {
+  display: block;
+}
+.msg_list .other ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  padding-top: 10px;
+  border: 1px solid #999;
+  background: #fff;
+}
+.msg_list .other ul li {
+  padding: 0px 0 10px 5px;
+}
+.msg_list .other ul li:hover {
+  color: #AFCAFD;
+}
+.msg_list li {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.msg_list li label {
+  float: left;
+  min-width: 75px;
+  color: #AFCAFD;
+}
+
+.data_list dl {
+  float: left;
+  font-size: 12px;
+}
+.data_list dl:last-of-type {
+  margin-left: 150px;
+}
+.data_list dl dt {
+  margin-bottom: 10px;
+}
+.data_list dl dd {
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+.data_list .data_list_01 {
+  margin-right: 40px;
+}
+.data_list .data_list_01 label {
+  float: left;
+  min-width: 66px;
+}
+.data_list .data_list_01 dd {
+  *zoom: 1;
+}
+.data_list .data_list_01 dd:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.data_list .data_list_01 .progress_box {
+  float: left;
+  width: 250px;
+}
+.data_list .data_list_01 .progress_box div {
+  float: left;
+  height: 16px;
+  background: #AFCAFD;
+}
+.data_list .data_list_01 .progress_box span {
+  position: absolute;
+}
+.data_list .data_list_02 label {
+  float: left;
+  padding-left: 20px;
+  min-width: 80px;
+  color: #AFCAFD;
+}
+.data_list .data_list_02 dd:hover {
+  color: #AFCAFD;
+}
+.data_list .data_list_03 label {
+  float: left;
+  min-width: 100px;
+  color: #AFCAFD;
+}
+.data_list .data_list_03 .blue_star {
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.data_list p {
+  clear: both;
+  line-height: 20px;
+}
+.data_list p.star_lv {
+  padding: 10px 0;
+}
+.data_list p.star_lv .big_star {
+  vertical-align: text-bottom;
+  margin-right: 15px;
+}
+.data_list p.pingfen .star_box {
+  display: inline-block;
+  margin: 0 10px;
+}
+.data_list p.pingfen .star_box b {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  padding-right: 2px;
+  vertical-align: bottom;
+  background: url(../images/pingfen-star.png) no-repeat;
+  cursor: pointer;
+}
+.data_list p.pingfen .star_box b.active {
+  background-position: 0 -23px;
 }
 
 /*# sourceMappingURL=listpage.css.map */

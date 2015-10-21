@@ -29,6 +29,41 @@
             width: 16px*$i;
         }
     }
+    .big_star#{$i}{
+        b{
+            width: 25px*$i;
+        }
+    }
+    .blue_star#{$i}{
+        b{
+            width: 19px*$i;
+        }
+    }
+}
+
+.big_star {
+    display: inline-block;
+    width: 122px;
+    height: 20px;
+    background: url(../images/big_star01.png);
+    b{
+        float: left;
+        display: block;
+        height: 20px;
+        background: url(../images/big_star02.png);
+    }
+}
+.blue_star {
+    display: inline-block;
+    width: 93px;
+    height: 17px;
+    background: url(../images/blue_small01.png);
+    b{
+        float: left;
+        display: block;
+        height: 17px;
+        background: url(../images/blue_small02.png);
+    }
 }
 
 // 按钮
@@ -50,7 +85,7 @@
     li {
         display: inline-block;
         margin-left: 8px;
-        a{
+        a {
             display: block;
             text-align: center;
             line-height: 25px;
@@ -59,16 +94,10 @@
             border: 1px solid #999;
             text-decoration: none;
             color: #666;
-            &.active,&:hover{
+            &.active,
+            &:hover {
                 background: $navcolor;
             }
         }
     }
 }
-
-
-
-
-
-
-

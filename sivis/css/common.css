@@ -329,20 +329,86 @@ footer .foot_right p a:hover {
   width: 16px;
 }
 
+.big_star1 b {
+  width: 25px;
+}
+
+.blue_star1 b {
+  width: 19px;
+}
+
 .star2 b {
   width: 32px;
+}
+
+.big_star2 b {
+  width: 50px;
+}
+
+.blue_star2 b {
+  width: 38px;
 }
 
 .star3 b {
   width: 48px;
 }
 
+.big_star3 b {
+  width: 75px;
+}
+
+.blue_star3 b {
+  width: 57px;
+}
+
 .star4 b {
   width: 64px;
 }
 
+.big_star4 b {
+  width: 100px;
+}
+
+.blue_star4 b {
+  width: 76px;
+}
+
 .star5 b {
   width: 80px;
+}
+
+.big_star5 b {
+  width: 125px;
+}
+
+.blue_star5 b {
+  width: 95px;
+}
+
+.big_star {
+  display: inline-block;
+  width: 122px;
+  height: 20px;
+  background: url(../images/big_star01.png);
+}
+.big_star b {
+  float: left;
+  display: block;
+  height: 20px;
+  background: url(../images/big_star02.png);
+}
+
+.blue_star {
+  display: inline-block;
+  width: 93px;
+  height: 17px;
+  background: url(../images/blue_small01.png);
+}
+.blue_star b {
+  float: left;
+  display: block;
+  height: 17px;
+  background: url(../images/blue_small02.png);
 }
 
 .link_button {

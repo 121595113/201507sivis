@@ -1,6 +1,7 @@
 @import "compass/utilities";
 @import "argument";
 @import "ditu";
+@import "sprite";
 .vertical_list {
     width: $boxwd;
     margin: 0 auto;
@@ -19,8 +20,8 @@
             font-size: 14px;
         }
         ul {
-        	width: 600px;
-        	line-height: 30px;
+            width: 600px;
+            line-height: 30px;
             @include pie-clearfix;
             border-bottom: 1px dotted #999;
             font-size: 12px;
@@ -28,21 +29,174 @@
                 float: left;
                 margin-right: 20px;
             }
-            label{
-            	color: $navcolor;
+            label {
+                color: $navcolor;
             }
-            .star{
-            	margin-left: 10px;
-            	vertical-align: middle;
+            .star {
+                margin-left: 10px;
+                vertical-align: middle;
             }
         }
-        dl{
-        	margin-top: 5px;
-        	line-height: 1.2em;
-        	font-size: 12px;
-        	label{
-        		color: $navcolor;
-        	}
+        dl {
+            margin-top: 5px;
+            line-height: 1.2em;
+            font-size: 12px;
+            label {
+                color: $navcolor;
+            }
+        }
+    }
+}
+
+// 
+.msg_list {
+    position: relative;
+    width: 680px;
+    border-bottom: 1px solid #999;
+    h1 {
+        padding: 20px 0 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    h2 {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .other {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        width: 120px;
+        button {
+            position: relative;
+            width: 100%;
+            border: 1px solid #eee;
+            text-align: left;
+            background: #fff;
+            cursor: pointer;
+            outline: none;
+            &:hover ul {
+                display: block;
+            }
+        }
+        ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -1px;
+            right: -1px;
+            padding-top: 10px;
+            border: 1px solid #999;
+            background: #fff;
+            li {
+                padding: 0px 0 10px 5px;
+                &:hover {
+                    color: $navcolor;
+                }
+            }
+        }
+    }
+    li {
+        font-size: 12px;
+        line-height: 1.5em;
+        label {
+            float: left;
+            min-width: 75px;
+            color: $navcolor;
+        }
+    }
+    padding-bottom: 35px;
+}
+
+// 数据列表
+.data_list {
+    dl {
+        float: left;
+        font-size: 12px;
+        &:last-of-type {
+            margin-left: 150px;
+        }
+        dt {
+            margin-bottom: 10px;
+        }
+        dd {
+            line-height: 16px;
+            margin-bottom: 2px;
+        }
+    }
+    .data_list_01 {
+        margin-right: 40px;
+        label {
+            float: left;
+            min-width: 66px;
+        }
+        dd {
+            @include pie-clearfix;
+        }
+        .progress_box {
+            float: left;
+            width: 250px;
+            div {
+                float: left;
+                height: 16px;
+                background: #AFCAFD;
+            }
+            span {
+                position: absolute;
+            }
+        }
+    }
+    .data_list_02 {
+        label {
+            float: left;
+            padding-left: 20px;
+            min-width: 80px;
+            color: $navcolor;
+        }
+        dd {
+            &:hover {
+                color: $navcolor;
+            }
+        }
+    }
+    .data_list_03 {
+        label {
+            float: left;
+            min-width: 100px;
+            color: $navcolor;
+        }
+        .blue_star {
+            margin-right: 5px;
+            vertical-align: bottom;
+        }
+    }
+    p {
+        clear: both;
+        line-height: 20px;
+        &.star_lv {
+            padding: 10px 0;
+            .big_star {
+                vertical-align: text-bottom;
+                margin-right: 15px;
+            }
+        }
+        &.pingfen {
+            .star_box{
+                display: inline-block;
+                margin: 0 10px;
+                b{
+                    display: inline-block;
+                    width: 22px;
+                    height: 20px;
+                    padding-right: 2px;
+                    vertical-align: bottom;
+                    background: url(../images/pingfen-star.png) no-repeat;
+                    cursor: pointer;
+                    &.active{
+                        background-position: 0 -23px;
+                    }
+                }
+            }
         }
     }
 }

@@ -4,10 +4,10 @@ require 'compass/import-once/activate'
 # Set this to the root of your project when deployed:
 # 项目名称和项目路径
 projectname="sivis"
-projectPath="../../#{projectname}"
+projectPath="#{projectname}"
 
 http_path = "/"
-sass_dir = "../#{projectname}"
+sass_dir = "_source/#{projectname}"
 css_dir = "#{projectPath}/css"
 images_dir = "#{projectPath}/images"
 javascripts_dir = "#{projectPath}/javascripts"
