@@ -1,6 +1,5 @@
 .ditu{
-	width: $boxwd;
-	margin: 0 auto;
+	@extend %center;
 	@include pie-clearfix;
 }
 .ditu_container{

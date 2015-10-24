@@ -54,30 +54,173 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-header {
-  background: #333F4F;
-}
-header .container {
+.header .container, .nav_lv0, .footer .container {
   width: 1100px;
   margin: 0 auto;
+}
+
+.good-sprite, .good-u1, .good-u2, .good-u3, .good-u4, .good-u5 {
+  background-image: url('../images/good-s239fd9cfcd.png');
+  background-repeat: no-repeat;
+}
+
+.good-u1 {
+  background-position: 0 0;
+}
+.good-u1:active, .good-u1.u1-active {
+  background-position: 0 -16px;
+}
+
+.good-u2 {
+  background-position: 0 -32px;
+}
+.good-u2:active, .good-u2.u2-active {
+  background-position: 0 -48px;
+}
+
+.good-u3 {
+  background-position: 0 -64px;
+}
+.good-u3:active, .good-u3.u3-active {
+  background-position: 0 -80px;
+}
+
+.good-u4 {
+  background-position: 0 -96px;
+}
+.good-u4:active, .good-u4.u4-active {
+  background-position: 0 -112px;
+}
+
+.good-u5 {
+  background-position: 0 -128px;
+}
+.good-u5:active, .good-u5.u5-active {
+  background-position: 0 -144px;
+}
+
+.icon-sprite, .icon-help, .icon-report, .icon-reviews, .icon-vote, .icon-votings {
+  background-image: url('../images/icon-s8afbce0e07.png');
+  background-repeat: no-repeat;
+}
+
+.icon-help {
+  background-position: 0 0;
+}
+
+.icon-report {
+  background-position: 0 -16px;
+}
+.icon-report:hover, .icon-report.report-hover {
+  background-position: 0 -32px;
+}
+
+.icon-reviews {
+  background-position: 0 -48px;
+}
+
+.icon-vote {
+  background-position: 0 -64px;
+}
+.icon-vote:hover, .icon-vote.vote-hover {
+  background-position: 0 -80px;
+}
+
+.icon-votings {
+  background-position: 0 -96px;
+}
+
+.store-sprite, .store-link1, .store-link2 {
+  background-image: url('../images/store-s26da13acf2.png');
+  background-repeat: no-repeat;
+}
+
+.store-link1 {
+  background-position: 0 0;
+  height: 50px;
+  width: 160px;
+}
+
+.store-link2 {
+  background-position: 0 -50px;
+  height: 50px;
+  width: 160px;
+}
+
+.hot-sprite, .hot-link1, .hot-link2, .hot-link3 {
+  background-image: url('../images/hot-sdd0af7a406.png');
+  background-repeat: no-repeat;
+}
+
+.hot-link1 {
+  background-position: 0 0;
+  height: 20px;
+  width: 20px;
+}
+
+.hot-link2 {
+  background-position: 0 -20px;
+  height: 20px;
+  width: 20px;
+}
+
+.hot-link3 {
+  background-position: 0 -40px;
+  height: 20px;
+  width: 20px;
+}
+
+.header {
+  background: #333F4F;
+}
+.header .container {
   padding: 40px 0 40px;
   *zoom: 1;
 }
-header .container:after {
+.header .container:after {
   content: "";
   display: table;
   clear: both;
 }
-header .container .logo {
+.header .container .logo {
   float: left;
   margin-right: 60px;
 }
-header .container .search {
+.header .container .search {
   float: left;
   margin-top: 10px;
   margin-right: 5px;
 }
-header .container .search input {
+.header .login {
+  float: right;
+  padding-top: 10px;
+  text-align: right;
+}
+.header .login li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.header .login li + li {
+  border-left: 1px solid #ACC7FD;
+}
+.header .login li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #ACC7FD;
+}
+.header .login li a:hover {
+  color: #fff;
+}
+.header .login p {
+  text-align: left;
+  padding: 0 10px;
+}
+.header .login p a {
+  font-size: 10px;
+  color: #ccc;
+}
+
+.search input {
   float: left;
   width: 240px;
   height: 33px;
@@ -87,7 +230,7 @@ header .container .search input {
   border-right: none;
   outline: none;
 }
-header .container .search button {
+.search .search-btn {
   width: 35px;
   height: 35px;
   padding: 0;
@@ -99,52 +242,23 @@ header .container .search button {
   background-size: 24px 24px;
   cursor: pointer;
 }
-header ul {
-  float: right;
-  padding-top: 10px;
-  text-align: right;
-}
-header ul li {
-  display: inline-block;
-  padding: 0 10px;
-}
-header ul li + li {
-  border-left: 1px solid #ACC7FD;
-}
-header ul li a {
-  font-size: 12px;
-  text-decoration: none;
-  color: #ACC7FD;
-}
-header ul li a:hover {
-  color: #fff;
-}
-header ul p {
-  text-align: left;
-  padding: 0 10px;
-}
-header ul p a {
-  font-size: 10px;
-  color: #ccc;
-}
 
-nav {
+.nav {
   background: #AFCAFD;
 }
-nav a {
+.nav a {
   text-decoration: none;
 }
-nav .nav_lv0 {
-  width: 1100px;
-  margin: 0 auto;
+
+.nav_lv0 {
   padding-left: 100px;
   box-sizing: border-box;
 }
-nav .nav_lv0 > li {
+.nav_lv0 .lv0_item {
   position: relative;
   display: inline-block;
 }
-nav .nav_lv0 > li > a {
+.nav_lv0 .lv0_item > a {
   display: block;
   width: 150px;
   text-align: center;
@@ -152,21 +266,22 @@ nav .nav_lv0 > li > a {
   font-weight: bold;
   color: #333F50;
 }
-nav .nav_lv0 > li:hover .nav_lv1 {
+.nav_lv0 .lv0_item:hover .nav_lv1 {
   display: block;
 }
-nav .nav_lv0 > li:hover > a {
+.nav_lv0 .lv0_item:hover > a {
   color: #fff;
 }
-nav .nav_lv0 div {
+.nav_lv0 div {
   float: right;
 }
-nav .nav_lv0 div a {
+.nav_lv0 div a {
   display: block;
   line-height: 50px;
   color: #fff;
 }
-nav .nav_lv1 {
+
+.nav_lv1 {
   display: none;
   position: absolute;
   top: 100%;
@@ -177,24 +292,25 @@ nav .nav_lv1 {
   border-top: none;
   background: #fff;
 }
-nav .nav_lv1 li {
+.nav_lv1 li {
   position: relative;
   height: 30px;
 }
-nav .nav_lv1 li a {
+.nav_lv1 li a {
   display: block;
   height: 100%;
   padding: 10px 0 10px 5px;
   font-size: 12px;
   color: #666;
 }
-nav .nav_lv1 li:hover .nav_lv2 {
+.nav_lv1 li:hover .nav_lv2 {
   display: block;
 }
-nav .nav_lv1 li:hover > a {
+.nav_lv1 li:hover > a {
   color: #AFCAFD;
 }
-nav .nav_lv2 {
+
+.nav_lv2 {
   display: none;
   position: absolute;
   left: 100%;
@@ -205,109 +321,87 @@ nav .nav_lv2 {
   background: #fff;
 }
 
-footer {
+.footer {
   background: #333F4F;
   clear: both;
 }
-footer .store {
+.footer .store {
   float: right;
-  margin-right: -30px;
 }
-footer .store a {
+.footer .store a {
   display: block;
-  width: 160px;
-  height: 50px;
   margin-bottom: 10px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
-footer .store a.store_link1 {
-  background-image: url(../images/u1258.png);
-}
-footer .store a.store_link2 {
-  background-image: url(../images/u1260.png);
-}
-footer .container {
+.footer .container {
   position: relative;
-  width: 1100px;
-  margin: 0 auto;
   padding: 30px 0;
   *zoom: 1;
 }
-footer .container:after {
+.footer .container:after {
   content: "";
   display: table;
   clear: both;
 }
-footer dl {
+.footer dl {
   float: left;
   width: 120px;
   margin-right: 120px;
 }
-footer dl dt {
+.footer dl dt {
   margin-bottom: 15px;
   font-weight: bold;
   line-height: 20px;
   color: #fff;
 }
-footer dl dt:hover {
+.footer dl dt:hover {
   font-weight: normal;
 }
-footer dl dd {
+.footer dl dd {
   line-height: 1.1em;
 }
-footer dl dd a {
+.footer dl dd a {
   font-size: 10px;
   text-decoration: none;
   color: #A7C2F6;
 }
-footer .hot_link {
+.footer .hot_link {
   margin-top: 10px;
 }
-footer .hot_link a {
+.footer .hot_link a {
   display: inline-block;
-  width: 20px;
-  height: 20px;
   margin-right: 5px;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
-footer .hot_link .link1 {
-  background-image: url("../images/link1.png");
-}
-footer .hot_link .link2 {
-  background-image: url("../images/link2.png");
-}
-footer .hot_link .link3 {
-  background-image: url("../images/link3.png");
-}
-footer .foot_right {
+.footer .foot_right {
   position: relative;
   padding-top: 15px;
   font-size: 10px;
   color: #A7C2F6;
   clear: both;
 }
-footer .foot_right div {
+.footer .foot_right div {
   position: absolute;
   left: 0;
   bottom: 0;
 }
-footer .foot_right div img {
+.footer .foot_right div img {
   position: absolute;
   left: 0;
   top: -45px;
 }
-footer .foot_right p {
+.footer .foot_right p {
   text-align: center;
 }
-footer .foot_right p a {
+.footer .foot_right p a {
   margin: 0 20px;
   text-decoration: none;
   color: inherit;
 }
-footer .foot_right p a:hover {
+.footer .foot_right p a:hover {
   color: #fff;
+}
+
+body {
+  min-width: 1100px;
 }
 
 .star {
@@ -316,13 +410,15 @@ footer .foot_right p a:hover {
   height: 14px;
   margin-right: 5px;
   vertical-align: bottom;
-  background: url(../images/star01.png) no-repeat;
+  background: url(../images/star.png) no-repeat;
+  background-position: 0 -16px;
 }
 .star b {
   float: left;
   display: block;
   height: 14px;
-  background: url(../images/star02.png) no-repeat;
+  background: url(../images/star.png) no-repeat;
+  background-position: 0 0;
 }
 
 .star1 b {
@@ -438,15 +534,13 @@ footer .foot_right p a:hover {
 .pagenumber li a {
   display: block;
   text-align: center;
-  line-height: 25px;
   padding: 0 10px;
-  font-size: 12px;
   border: 1px solid #999;
+  font-size: 12px;
+  line-height: 25px;
   text-decoration: none;
   color: #666;
 }
 .pagenumber li a.active, .pagenumber li a:hover {
   background: #AFCAFD;
 }
-
-/*# sourceMappingURL=common.css.map */

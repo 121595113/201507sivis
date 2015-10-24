@@ -1,25 +1,31 @@
 @import "compass/utilities";
 @import "compass/reset";
 @import "argument";
+@import "sprite";
 // 页头
 @import "header";
 // 导航
 @import "nav";
 // 页脚
 @import "footer";
+body{
+    min-width: 1100px;
+}
 // 星星样式
 .star {
     display: inline-block;
     width: 79px;
     height: 14px;
     margin-right: 5px;
-    vertical-align: bottom;
-    background: url(../images/star01.png) no-repeat;
+    vertical-align: bottom; 
+    background: url(../images/star.png) no-repeat; 
+    background-position: 0 -16px; 
     b {
         float: left;
         display: block;
         height: 14px;
-        background: url(../images/star02.png) no-repeat;
+        background: url(../images/star.png) no-repeat; 
+        background-position: 0 0;
     }
 }
 
@@ -88,10 +94,10 @@
         a {
             display: block;
             text-align: center;
-            line-height: 25px;
             padding: 0 10px;
-            font-size: 12px;
             border: 1px solid #999;
+            font-size: 12px;
+            line-height: 25px;
             text-decoration: none;
             color: #666;
             &.active,

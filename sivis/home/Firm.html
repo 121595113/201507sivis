@@ -10,20 +10,20 @@
 
 <body>
     <!-- header -->
-    <header>
+    <header class="header">
         <div class="container">
             <a class="logo" href="#" title="logo">
-                <img src="../images/logo.png" width="160" alt="">
+                <img src="../images/logo.png" width="160">
             </a>
             <div class="search">
                 <input type="text" value="" placeholder="请输入关键字搜索">
-                <button></button>
+                <button class="search-btn"></button>
             </div>
             <div class="search">
                 <input type="text" value="" placeholder="请输入关键字搜索">
-                <button></button>
+                <button class="search-btn"></button>
             </div>
-            <ul>
+            <ul class="login">
                 <li><a href="#">SIGN IN</a></li>
                 <li><a href="#">SIGN UP</a></li>
                 <li><a href="#">HELP</a></li>
@@ -32,10 +32,10 @@
         </div>
     </header>
     <!-- 导航 -->
-    <nav>
+    <nav class="nav">
         <ul class="nav_lv0">
-            <li><a href="" title="">Home</a></li>
-            <li><a href="" title="">Circulate</a>
+            <li class="lv0_item"><a href="" title="">Home</a></li>
+            <li class="lv0_item"><a href="" title="">Circulate</a>
                 <ul class="nav_lv1">
                     <li><a href="#">To Drybulk Shipowners</a>
                         <ul class="nav_lv2">
@@ -69,7 +69,7 @@
                     <li><a href="#">To Drybulk Shipowners</a></li>
                 </ul>
             </li>
-            <li><a href="" title="">Port Inquiry</a>
+            <li class="lv0_item"><a href="" title="">Port Inquiry</a>
                 <ul class="nav_lv1">
                     <li><a href="#">To Drybulk Shipowners</a></li>
                     <li><a href="#">To Drybulk Shipowners</a></li>
@@ -81,7 +81,7 @@
                     <li><a href="#">To Drybulk Shipowners</a></li>
                 </ul>
             </li>
-            <li><a href="" title="">Intelligence</a>
+            <li class="lv0_item"><a href="" title="">Intelligence</a>
                 <ul class="nav_lv1">
                     <li><a href="#">To Drybulk Shipowners</a></li>
                     <li><a href="#">To Drybulk Shipowners</a></li>
@@ -89,7 +89,7 @@
                     <li><a href="#">To Drybulk Shipowners</a></li>
                 </ul>
             </li>
-            <li><a href="" title="">Specials</a></li>
+            <li class="lv0_item"><a href="" title="">Specials</a></li>
             <div><a href="#">Map Mode</a></div>
         </ul>
     </nav>
@@ -170,37 +170,37 @@
                 </dd>
                 <dd>
                     <label>Very Good</label>
-                    <div  class="progress_box">
+                    <div class="progress_box">
                         <div style="width:40%"></div><span>40%</span></div>
                 </dd>
                 <dd>
                     <label>Average</label>
-                    <div  class="progress_box">
+                    <div class="progress_box">
                         <div style="width:80%"></div><span>80%</span></div>
                 </dd>
                 <dd>
                     <label>Poor</label>
-                    <div  class="progress_box">
+                    <div class="progress_box">
                         <div style="width:100%"></div><span>100%</span></div>
                 </dd>
                 <dd>
                     <label>Horrible</label>
-                    <div  class="progress_box">
+                    <div class="progress_box">
                         <div style="width:90%"></div><span>90%</span></div>
                 </dd>
             </dl>
             <dl class="data_list_02">
                 <dt>Good at</dt>
                 <dd>
-                    <label class="good-u1">Drybulk</label>23</dd>
+                    <label class="good-u1 u1-active">Drybulk</label>23</dd>
                 <dd>
-                    <label class="good-u2">Tanker</label>11</dd>
+                    <label class="good-u2 u2-active">Tanker</label>11</dd>
                 <dd>
-                    <label class="good-u3">Offshore</label>5</dd>
+                    <label class="good-u3 u3-active">Offshore</label>5</dd>
                 <dd>
-                    <label class="good-u4">SNP</label>7</dd>
+                    <label class="good-u4 u4-active">SNP</label>7</dd>
                 <dd>
-                    <label class="good-u5">Financing</label>2</dd>
+                    <label class="good-u5 u5-active">Financing</label>2</dd>
             </dl>
             <dl class="data_list_03">
                 <dt>Rating Summary</dt>
@@ -215,151 +215,195 @@
                 <dd>
                     <label>Payment Speed</label><span class="blue_star blue_star5"><b></b></span>3.0</dd>
             </dl>
-            <p class="pingfen">Your Rate:<span class="star_box"><b></b><b></b><b></b><b></b><b></b></span><span>Excellent</span></p>
-            <button>Write Review</button>
-            <button>Add Favorate</button>
+            <p class="pingfen">Your Rate:<span class="star_box"><b data-value="Horrible"></b><b data-value="Poor"></b><b data-value="Average"></b><b data-value="Very Good"></b> <b data-value="Excellent"></b></span><span class="pingfen-txt"></span></p>
+            <button class="blue_btn">Write Review</button>
+            <button class="default_btn">Add Favorate</button>
         </section>
-        <section>
+        <section class="txt_box">
             <h2>Gallary</h2>
-            <img src="">
+            <div>
+                <img src="../images/u71.jpg">
+                <img src="../images/u71.jpg">
+                <img src="../images/u71.jpg">
+                <img src="../images/u71.jpg">
+            </div>
             <h2>Office Profile</h2>
             <p>Clarksons Platou office in Singapore reflects the burgeoning shipping business within the region, servicing the bulk charter markets in dry, tankers (both deep sea and specialised products), containers and gas through the spectrum of sizes. In addition, we have well-established sale and purchase and offshore departments working alongside experienced projects desks in their respective fields.</p>
             <h2>Recent Update </h2>
         </section>
     </section>
     <!-- 列表 -->
-    <section class="vertical_list">
-        <ul class="list_container">
+    <section class="news_list">
+        <div class="filter_container">
+            <button class="active">Newest First</button>
+            <button>Most Useful First</button>
+        </div>
+        <ul class="news_container">
             <li>
-                <img src="../pic/u1168.png" height="122" width="249">
-                <h2>Barry Rogliano Salles</h2>
-                <ul>
-                    <li>
-                        <label>Rating</label><span class="star star2"><b></b></span></li>
-                    <li>
-                        <label>Reviews</label> 211</li>
-                    <li>
-                        <label>Servies:</label>Dry, Tanker, Offshore, S&P</li>
-                </ul>
-                <dl>
-                    <dd>
-                        <label>Address:</label> 145 Main Street, Port Washington, NY 11050, United States of America</dd>
-                    <dd>
-                        <label>Telephone:</label> 15169443500</dd>
-                    <dd>
-                        <label>Business Email: </label><a href="mailto:chartering@midship.com">chartering@midship.com</a></dd>
-                    <dd>
-                        <label>Official Website:</label> <a href="http://www.midship.com">www.midship.com</a></dd>
-                </dl>
+                <div class="user_msg">
+                    <img src="../images/u349.jpg">
+                    <p class="name">ans</p>
+                    <p class="lv">Level 3 Contriutor</p>
+                    <dl>
+                        <dd><span class="icon-votings"></span>52 votings</dd>
+                        <dd><span class="icon-reviews"></span>12 reviews</dd>
+                        <dd><span class="icon-help"></span>4 helpful</dd>
+                    </dl>
+                </div>
+                <div class="content">
+                    <h2>"They are professional cool guys"</h2>
+                    <p class="score">
+                        <span class="star star3"><b></b></span>Reviewed August 1, 2015
+                    </p>
+                    <p class="txt">They are professional cool guys, no organisation can match the breadth, talents or track record of the Clarksons broking capability - which is simply the most respected and successful in the maritime sector. Our brokers bring together companies with cargo to ship (charterers) and those with vessels capable of shipping it (owners). In short, our expertise helps make the transaction happen. Our clients move dry cargoes (iron ore, coal, grains...
+                        <a class="more" href="javascript:;">More...</a>
+                    </p>
+                    <ul>
+                        <li><span class="icon-vote"></span>Vote Helpful</li>
+                        <li><span class="icon-report"></span>Report</li>
+                    </ul>
+                    <p>This review is the subjective opinion of a SIVIS member and not of SIVIS Inc.</p>
+                </div>
             </li>
             <li>
-                <img src="../pic/u1168.png" height="122" width="249">
-                <h2>Barry Rogliano Salles</h2>
-                <ul>
-                    <li>
-                        <label>Rating</label><span class="star star3"><b></b></span></li>
-                    <li>
-                        <label>Reviews</label> 211</li>
-                    <li>
-                        <label>Servies:</label>Dry, Tanker, Offshore, S&P</li>
-                </ul>
-                <dl>
-                    <dd>
-                        <label>Address:</label> 145 Main Street, Port Washington, NY 11050, United States of America</dd>
-                    <dd>
-                        <label>Telephone:</label> 15169443500</dd>
-                    <dd>
-                        <label>Business Email: </label><a href="mailto:chartering@midship.com">chartering@midship.com</a></dd>
-                    <dd>
-                        <label>Official Website:</label> <a href="http://www.midship.com">www.midship.com</a></dd>
-                </dl>
+                <div class="user_msg">
+                    <img src="../images/u349.jpg">
+                    <p class="name">ans</p>
+                    <p class="lv">Level 3 Contriutor</p>
+                    <dl>
+                        <dd><span class="icon-votings"></span>52 votings</dd>
+                        <dd><span class="icon-reviews"></span>12 reviews</dd>
+                        <dd><span class="icon-help"></span>4 helpful</dd>
+                    </dl>
+                </div>
+                <div class="content">
+                    <h2>"They are professional cool guys"</h2>
+                    <p class="score">
+                        <span class="star star3"><b></b></span>Reviewed August 1, 2015
+                    </p>
+                    <p class="txt">They are professional cool guys, no organisation can match the breadth, talents or track record of the Clarksons broking capability - which is simply the most respected and successful in the maritime sector. Our brokers bring together companies with cargo to ship (charterers) and those with vessels capable of shipping it (owners). In short, our expertise helps make the transaction happen. Our clients move dry cargoes (iron ore, coal, grains...
+                        <a class="more" href="javascript:;">More...</a>
+                    </p>
+                    <ul>
+                        <li><span class="icon-vote"></span>Vote Helpful</li>
+                        <li><span class="icon-report"></span>Report</li>
+                    </ul>
+                    <p>This review is the subjective opinion of a SIVIS member and not of SIVIS Inc.</p>
+                </div>
             </li>
             <li>
-                <img src="../pic/u1168.png" height="122" width="249">
-                <h2>Barry Rogliano Salles</h2>
-                <ul>
-                    <li>
-                        <label>Rating</label><span class="star star4"><b></b></span></li>
-                    <li>
-                        <label>Reviews</label> 211</li>
-                    <li>
-                        <label>Servies:</label>Dry, Tanker, Offshore, S&P</li>
-                </ul>
-                <dl>
-                    <dd>
-                        <label>Address:</label> 145 Main Street, Port Washington, NY 11050, United States of America</dd>
-                    <dd>
-                        <label>Telephone:</label> 15169443500</dd>
-                    <dd>
-                        <label>Business Email: </label><a href="mailto:chartering@midship.com">chartering@midship.com</a></dd>
-                    <dd>
-                        <label>Official Website:</label> <a href="http://www.midship.com">www.midship.com</a></dd>
-                </dl>
+                <div class="user_msg">
+                    <img src="../images/u349.jpg">
+                    <p class="name">ans</p>
+                    <p class="lv">Level 3 Contriutor</p>
+                    <dl>
+                        <dd><span class="icon-votings"></span>52 votings</dd>
+                        <dd><span class="icon-reviews"></span>12 reviews</dd>
+                        <dd><span class="icon-help"></span>4 helpful</dd>
+                    </dl>
+                </div>
+                <div class="content">
+                    <h2>"They are professional cool guys"</h2>
+                    <p class="score">
+                        <span class="star star3"><b></b></span>Reviewed August 1, 2015
+                    </p>
+                    <p class="txt">They are professional cool guys, no organisation can match the breadth, talents or track record of the Clarksons broking capability - which is simply the most respected and successful in the maritime sector. Our brokers bring together companies with cargo to ship (charterers) and those with vessels capable of shipping it (owners). In short, our expertise helps make the transaction happen. Our clients move dry cargoes (iron ore, coal, grains...
+                        <a class="more" href="javascript:;">More...</a>
+                    </p>
+                    <ul>
+                        <li><span class="icon-vote"></span>Vote Helpful</li>
+                        <li><span class="icon-report"></span>Report</li>
+                    </ul>
+                    <p>This review is the subjective opinion of a SIVIS member and not of SIVIS Inc.</p>
+                </div>
             </li>
             <li>
-                <img src="../pic/u1168.png" height="122" width="249">
-                <h2>Barry Rogliano Salles</h2>
-                <ul>
-                    <li>
-                        <label>Rating</label><span class="star star1"><b></b></span></li>
-                    <li>
-                        <label>Reviews</label> 211</li>
-                    <li>
-                        <label>Servies:</label>Dry, Tanker, Offshore, S&P</li>
-                </ul>
-                <dl>
-                    <dd>
-                        <label>Address:</label> 145 Main Street, Port Washington, NY 11050, United States of America</dd>
-                    <dd>
-                        <label>Telephone:</label> 15169443500</dd>
-                    <dd>
-                        <label>Business Email: </label><a href="mailto:chartering@midship.com">chartering@midship.com</a></dd>
-                    <dd>
-                        <label>Official Website:</label> <a href="http://www.midship.com">www.midship.com</a></dd>
-                </dl>
+                <div class="user_msg">
+                    <img src="../images/u349.jpg">
+                    <p class="name">ans</p>
+                    <p class="lv">Level 3 Contriutor</p>
+                    <dl>
+                        <dd><span class="icon-votings"></span>52 votings</dd>
+                        <dd><span class="icon-reviews"></span>12 reviews</dd>
+                        <dd><span class="icon-help"></span>4 helpful</dd>
+                    </dl>
+                </div>
+                <div class="content">
+                    <h2>"They are professional cool guys"</h2>
+                    <p class="score">
+                        <span class="star star3"><b></b></span>Reviewed August 1, 2015
+                    </p>
+                    <p class="txt">They are professional cool guys, no organisation can match the breadth, talents or track record of the Clarksons broking capability - which is simply the most respected and successful in the maritime sector. Our brokers bring together companies with cargo to ship (charterers) and those with vessels capable of shipping it (owners). In short, our expertise helps make the transaction happen. Our clients move dry cargoes (iron ore, coal, grains...
+                        <a class="more" href="javascript:;">More...</a>
+                    </p>
+                    <ul>
+                        <li><span class="icon-vote"></span>Vote Helpful</li>
+                        <li><span class="icon-report"></span>Report</li>
+                    </ul>
+                    <p>This review is the subjective opinion of a SIVIS member and not of SIVIS Inc.</p>
+                </div>
             </li>
             <li>
-                <img src="../pic/u1168.png" height="122" width="249">
-                <h2>Barry Rogliano Salles</h2>
-                <ul>
-                    <li>
-                        <label>Rating</label><span class="star star5"><b></b></span></li>
-                    <li>
-                        <label>Reviews</label> 211</li>
-                    <li>
-                        <label>Servies:</label>Dry, Tanker, Offshore, S&P</li>
-                </ul>
-                <dl>
-                    <dd>
-                        <label>Address:</label> 145 Main Street, Port Washington, NY 11050, United States of America</dd>
-                    <dd>
-                        <label>Telephone:</label> 15169443500</dd>
-                    <dd>
-                        <label>Business Email: </label><a href="mailto:chartering@midship.com">chartering@midship.com</a></dd>
-                    <dd>
-                        <label>Official Website:</label> <a href="http://www.midship.com">www.midship.com</a></dd>
-                </dl>
+                <div class="user_msg">
+                    <img src="../images/u349.jpg">
+                    <p class="name">ans</p>
+                    <p class="lv">Level 3 Contriutor</p>
+                    <dl>
+                        <dd><span class="icon-votings"></span>52 votings</dd>
+                        <dd><span class="icon-reviews"></span>12 reviews</dd>
+                        <dd><span class="icon-help"></span>4 helpful</dd>
+                    </dl>
+                </div>
+                <div class="content">
+                    <h2>"They are professional cool guys"</h2>
+                    <p class="score">
+                        <span class="star star3"><b></b></span>Reviewed August 1, 2015
+                    </p>
+                    <p class="txt">They are professional cool guys, no organisation can match the breadth, talents or track record of the Clarksons broking capability - which is simply the most respected and successful in the maritime sector. Our brokers bring together companies with cargo to ship (charterers) and those with vessels capable of shipping it (owners). In short, our expertise helps make the transaction happen. Our clients move dry cargoes (iron ore, coal, grains...
+                        <a class="more" href="javascript:;">More...</a>
+                    </p>
+                    <ul>
+                        <li><span class="icon-vote"></span>Vote Helpful</li>
+                        <li><span class="icon-report"></span>Report</li>
+                    </ul>
+                    <p>This review is the subjective opinion of a SIVIS member and not of SIVIS Inc.</p>
+                </div>
+            </li>
+            <li>
+                <div class="user_msg">
+                    <img src="../images/u349.jpg">
+                    <p class="name">ans</p>
+                    <p class="lv">Level 3 Contriutor</p>
+                    <dl>
+                        <dd><span class="icon-votings"></span>52 votings</dd>
+                        <dd><span class="icon-reviews"></span>12 reviews</dd>
+                        <dd><span class="icon-help"></span>4 helpful</dd>
+                    </dl>
+                </div>
+                <div class="content">
+                    <h2>"They are professional cool guys"</h2>
+                    <p class="score">
+                        <span class="star star3"><b></b></span>Reviewed August 1, 2015
+                    </p>
+                    <p class="txt">They are professional cool guys, no organisation can match the breadth, talents or track record of the Clarksons broking capability - which is simply the most respected and successful in the maritime sector. Our brokers bring together companies with cargo to ship (charterers) and those with vessels capable of shipping it (owners). In short, our expertise helps make the transaction happen. Our clients move dry cargoes (iron ore, coal, grains...
+                        <a class="more" href="javascript:;">More...</a>
+                    </p>
+                    <ul>
+                        <li><span class="icon-vote"></span>Vote Helpful</li>
+                        <li><span class="icon-report"></span>Report</li>
+                    </ul>
+                    <p>This review is the subjective opinion of a SIVIS member and not of SIVIS Inc.</p>
+                </div>
             </li>
         </ul>
-        <!-- 页面 -->
-        <ul class="pagenumber">
-            <li><a href="javascript:;">Prev</a></li>
-            <li><a class="active" href="javascript:;">1</a></li>
-            <li><a href="javascript:;">2</a></li>
-            <li><a href="javascript:;">3</a></li>
-            <li><a href="javascript:;">4</a></li>
-            <li><a href="javascript:;">5</a></li>
-            <li><span>...</span></li>
-            <li><a href="javascript:;">12</a></li>
-            <li><a href="javascript:;">Next</a></li>
-        </ul>
+        <button class="link_button">More Categories</button>
     </section>
     <!-- 页脚 -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="store">
-                <a class="store_link1" href="#"></a>
-                <a class="store_link2" href="#"></a>
+                <a class="store-link1" href="#"></a>
+                <a class="store-link2" href="#"></a>
             </div>
             <dl>
                 <dt>Company</dt>
@@ -382,9 +426,9 @@
                 <dd><a href="#">Contact Us</a></dd>
                 <dd><a href="#">Follow Us</a></dd>
                 <dd class="hot_link">
-                    <a class="link1" href="#"></a>
-                    <a class="link2" href="#"></a>
-                    <a class="link3" href="#"></a>
+                    <a class="hot-link1" href="#"></a>
+                    <a class="hot-link2" href="#"></a>
+                    <a class="hot-link3" href="#"></a>
                 </dd>
             </dl>
             <div class="foot_right">
@@ -393,6 +437,72 @@
             </div>
         </div>
     </footer>
+    <div class="dialog_box">
+        <button class="close_btn">X</button>
+        <div class="dialog_header">
+            <p class="pingfen">Your overall rate:<span class="star_box"><b data-value="Horrible"></b><b data-value="Poor"></b><b data-value="Average"></b><b data-value="Very Good"></b> <b data-value="Excellent"></b></span></p>
+        </div>
+        <div class="dialog_content">
+            <div class="left_container">
+                <h2>Your Review Title</h2>
+                <input type="text">
+                <h2>Your Review</h2>
+                <textarea name=""></textarea>
+            </div>
+            <div class="right_container">
+                <dl class="performance">
+                    <dt>How about their detailed performance</dt>
+                    <dd>
+                        <label>Amicablility</label>
+                        <span class="small_star_box"><b class="active" data-value="Horrible"></b><b data-value="Poor"></b><b data-value="Average"></b><b data-value="Very Good"></b><b data-value="Excellent"></b></span>
+                    </dd>
+                    <dd>
+                        <label>Professionalism</label>
+                        <span class="small_star_box"><b data-value="Horrible"></b><b data-value="Poor"></b><b data-value="Average"></b><b data-value="Very Good"></b><b data-value="Excellent"></b></span>
+                    </dd>
+                    <dd>
+                        <label>Effeciency</label>
+                        <span class="small_star_box"><b data-value="Horrible"></b><b data-value="Poor"></b><b data-value="Average"></b><b data-value="Very Good"></b><b data-value="Excellent"></b></span>
+                    </dd>
+                    <dd>
+                        <label>Cooperativity</label>
+                        <span class="small_star_box"><b data-value="Horrible"></b><b data-value="Poor"></b><b data-value="Average"></b><b data-value="Very Good"></b><b data-value="Excellent"></b></span>
+                    </dd>
+                    <dd>
+                        <label>Payment Speed</label>
+                        <span class="small_star_box"><b data-value="Horrible"></b><b data-value="Poor"></b><b data-value="Average"></b><b data-value="Very Good"></b><b data-value="Excellent"></b></span>
+                    </dd>
+                </dl>
+                <dl class="good_light">
+                    <dt>Light it up if they are good at it</dt>
+                    <dd>
+                        <label>Drybulk</label>
+                        <span class="good-u1" data-class="u1-active"></span>
+                    </dd>
+                    <dd>
+                        <label>Tanker</label>
+                        <span class="good-u2" data-class="u2-active"></span>
+                    </dd>
+                    <dd>
+                        <label>Offshore</label>
+                        <span class="good-u3" data-class="u3-active"></span>
+                    </dd>
+                    <dd>
+                        <label>SNP</label>
+                        <span class="good-u4" data-class="u4-active"></span>
+                    </dd>
+                    <dd>
+                        <label>Financing</label>
+                        <span class="good-u5" data-class="u5-active"></span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="dialog_footer">
+            <button class="done">Done</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
     <script src="../js/jquery-1.8.3.min.js"></script>
     <script src="../js/sivis.js"></script>
 </body>

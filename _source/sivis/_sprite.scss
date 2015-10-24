@@ -1,4 +1,16 @@
 @import "compass/utilities";
+
 $good-spacing:4px;
 @import "good/*.png";
 @include all-good-sprites();
+
+@import "icon/*.png";
+@include all-icon-sprites();
+
+$store-sprite-dimensions: true;
+@import "store/*.png";
+@include all-store-sprites();
+
+$hot-sprite-dimensions: true;
+@import "hot/*.png";
+@include all-hot-sprites();

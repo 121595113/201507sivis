@@ -3,8 +3,7 @@
 @import "ditu";
 @import "sprite";
 .vertical_list {
-    width: $boxwd;
-    margin: 0 auto;
+    @extend %center;
     .list_container {
         >li {
             position: relative;
@@ -110,6 +109,7 @@
 
 // 数据列表
 .data_list {
+    padding-bottom: 20px;
     dl {
         float: left;
         font-size: 12px;
@@ -181,22 +181,300 @@
             }
         }
         &.pingfen {
-            .star_box{
-                display: inline-block;
-                margin: 0 10px;
-                b{
+            padding: 10px 0;
+            @at-root{
+               .star_box{
+                   display: inline-block;
+                   margin: 0 10px;
+                   vertical-align: middle;
+                   b{
+                       display: inline-block;
+                       width: 22px;
+                       height: 20px;
+                       padding-right: 2px;
+                       float: left;
+                       background: url(../images/pingfen-star.png) no-repeat;
+                       cursor: pointer;
+                       &.active{
+                           background-position: 0 -23px;
+                       }
+                   }
+               } 
+            }
+            
+        }
+    }
+    button{
+        width: 97px;
+        height: 35px;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+        &.blue_btn{
+            color: #fff;
+            border:1px solid #333F4F;
+            background: #333F4F;
+            &:hover{
+                background: $navcolor;
+            }
+        }
+        &.default_btn{
+            color: #666;
+            border:1px solid $navcolor;
+            background: #fff;
+            &:hover{
+                color: $navcolor;
+            }
+        }
+    }
+}
+.txt_box{
+    border-top: 1px solid #666;
+    h2{
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 2em;
+    }
+    div{
+        @include pie-clearfix;
+        img{
+            float: left;
+            margin-right: 10px;
+        }
+    }
+    p{
+        font-size: 10px;
+        color: #999;
+    }
+}
+// 信息列表
+.news_list{
+    @extend %center;
+    border-top: 1px solid #666;
+    padding-top: 10px;
+    .filter_container{
+        button{
+            width: 146px;
+            height: 40px;
+            border: 1px solid $navcolor;
+            color: #333;
+            background: #fff;
+            cursor: pointer;
+            &.active{
+                color: #fff;
+                background: $navcolor;
+            }
+        }
+    }
+    .news_container{
+        padding-top: 60px;
+        li{
+            position: relative;
+            margin-bottom: 50px;
+        }
+        .user_msg{
+            position: absolute;
+            left: 0;
+            .name{
+                font-size: 10px;
+                line-height: 1.5em;
+                color: #999;
+            }
+            .lv{
+                font-size: 12px;
+            }
+            dl{
+                font-size: 12px;
+                color: #999;
+                padding-top: 15px;
+                line-height: 1.5em;
+                span{
                     display: inline-block;
-                    width: 22px;
-                    height: 20px;
-                    padding-right: 2px;
-                    vertical-align: bottom;
-                    background: url(../images/pingfen-star.png) no-repeat;
-                    cursor: pointer;
-                    &.active{
-                        background-position: 0 -23px;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .content{
+            margin-left: 150px;
+            width: 700px;
+            padding: 20px;
+            box-sizing:border-box;
+            border:1px solid #666; 
+            box-shadow: 6px 6px 8px #999;
+            h2{
+                font-style: italic;
+                line-height: 1.5em;
+                color: $navcolor;
+            }
+            p{
+              font-size: 12px;
+                color: #666;  
+            }
+            .score{
+                padding: 10px 0;
+            }
+            .txt{
+                min-height: 100px;
+                a{
+                    display: block;
+                    margin: 15px 0;
+                }
+            }
+            ul{
+                margin-bottom: 20px;
+                @include pie-clearfix;
+                li{
+                    float: left;
+                    margin-right: 40px;
+                    font-size: 12px;
+                }
+                span{
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 5px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .link_button{
+        margin: 0 auto 30px;
+    }
+}
+
+.dialog_box{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top:50%;
+    width: 1000px;
+    height: 518px;
+    margin-top: -259px;
+    margin-left: -500px;
+    padding: 20px;
+    box-sizing:border-box;
+    border: 1px solid #666;
+    background: #fff;
+    .close_btn{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $navcolor;
+        color: $navcolor;
+        background: #fff;
+        cursor: pointer;
+        outline: none;
+    }
+    .dialog_header{
+        padding-bottom: 20px;
+        border-bottom: 1px solid $navcolor;
+    }
+    .dialog_content{
+        @include pie-clearfix;
+        .left_container{
+            float: left;
+            width: 500px;
+            h2{
+                font-size: 12px;
+                font-weight: normal;
+                margin: 20px auto 10px;
+            }
+            %txt{
+                width: 100%;
+                outline: none;
+                box-sizing:border-box;
+                border: 1px solid #bbb;
+            }
+            input{
+                @extend %txt;
+                height: 25px;
+                padding: 0 3px;
+            }
+            textarea{
+                @extend %txt;
+                height: 300px;
+            }
+        }
+        .right_container{
+            margin-left: 540px;
+            dl{
+                font-size: 12px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                dt{
+                    margin-bottom: 10px;
+                }
+                @mixin label(){
+                    label{
+                        float: left;
+                        @content;
+                    }
+                }
+                &.performance{
+                    @include label(){
+                        min-width: 100px;
+                        line-height: 18px;
+                    }
+                }
+                &.good_light{
+                     @include label(){
+                        min-width: 80px;
+                        line-height: 16px;
+                    }                
+                    span{
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        cursor: pointer;
                     }
                 }
             }
+        }
+    }
+    .dialog_footer{
+        margin-top: -30px;
+        margin-left: 540px;
+        button{
+            display: inline-block;
+            width: 120px;
+            height: 35px;
+            padding: 0;
+            margin-top: -35px;
+            cursor: pointer;
+            border-width:1px;
+            border-style: solid;
+            outline: none;
+            &.done{
+                color: #fff;
+                border-color: #333F4F;
+                background: #333F4F;
+            }
+            &.cancel{
+                color: $navcolor;
+                border-color: $navcolor;
+                background: #fff;
+            }
+        }
+        
+    }
+}
+.small_star_box{
+    display: inline-block;
+    b{
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        padding-right: 2px;
+        background:url(../images/blue_small01.png);
+        &.active{
+            background:url(../images/blue_small02.png);
         }
     }
 }

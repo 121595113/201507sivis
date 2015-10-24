@@ -40,7 +40,6 @@ sourcemap = true
 if environment == :development
 	sourcemap = false
 	output_style = :expanded
-	require "fileutils"
 end
 
 if environment == :production
@@ -61,14 +60,14 @@ if environment == :production
 			File.rename(file, css_dir + filename + ".min" + File.extname(file))
 			cssMinIndex += 1
 		end
-	    # 移除min文件夹
-	    # if File.directory?(css_dir) and cssMinIndex == sassAry.length
-	    # 	FileUtils.rm_r(css_dir)
-	    # end 
-
 	    # 删除map后缀文件
 	    if File.directory?(css_dir) and cssMinIndex == sassAry.length
 	      FileUtils.rm_r Dir.glob("#{css_dir}/../*.map")
+	    end 
+
+	    # 移除min文件夹
+	    if File.directory?(css_dir) and cssMinIndex == sassAry.length
+	    	FileUtils.rm_r(css_dir)
 	    end 
 end
 

@@ -1,3 +1,8 @@
+.ditu, .content_list {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 .sidebar {
   float: left;
   margin: 10px 30px 20px 0;
@@ -9,23 +14,24 @@
   display: table;
   clear: both;
 }
+
 .sidebar_lv0 {
   width: 200px;
   border: 1px solid #CDCDCD;
   background: #fff;
 }
-.sidebar_lv0 > li {
+.sidebar_lv0 .lv0-item {
   position: relative;
   height: 40px;
   color: #363636;
 }
-.sidebar_lv0 > li:hover {
+.sidebar_lv0 .lv0-item:hover {
   color: #AFCAFD;
 }
-.sidebar_lv0 > li:hover .sidebar_lv1 {
+.sidebar_lv0 .lv0-item:hover .sidebar_lv1 {
   display: block;
 }
-.sidebar_lv0 > li > a {
+.sidebar_lv0 .lv0-item > a {
   display: block;
   padding-top: 10px;
   padding-left: 5px;
@@ -40,8 +46,8 @@
   z-index: 1;
   width: 150px;
   margin-top: -1px;
-  background: #fff;
   border: 1px solid #CDCDCD;
+  background: #fff;
 }
 .sidebar_lv0 .sidebar_lv1 li {
   color: #363636;
@@ -58,8 +64,6 @@
 }
 
 .ditu {
-  width: 1100px;
-  margin: 0 auto;
   *zoom: 1;
 }
 .ditu:after {
@@ -228,8 +232,6 @@
 }
 
 .content_list {
-  width: 1100px;
-  margin: 0 auto;
   border-top: 1px solid #CDCDCD;
   clear: both;
 }
@@ -292,5 +294,3 @@
 .content_list .link_button {
   margin: 50px auto;
 }
-
-/*# sourceMappingURL=home.css.map */

@@ -1,6 +1,5 @@
 .content_list {
-    width: $boxwd;
-    margin: 0 auto;
+    @extend %center;
     border-top: 1px solid #CDCDCD;
     clear: both;
     ul {
